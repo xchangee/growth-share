@@ -8,9 +8,9 @@
 
 ## 在线预览
 
-[![Growth Share 活动视觉墙预览](docs/assets/preview.jpg)](https://growth-share.xchangee.chatgpt.site)
+[![Growth Share 活动视觉墙预览](docs/assets/preview.jpg)](https://xchangee.github.io/growth-share/)
 
-[打开在线演示 →](https://growth-share.xchangee.chatgpt.site)
+[打开在线演示 →](https://xchangee.github.io/growth-share/)
 
 在线演示包含 01 人物档案、02 头像字形与 03 活动主视觉三种场景；可点击右上角切换器，或使用 Q、W、E 键切换。
 
