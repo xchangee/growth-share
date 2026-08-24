@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "profileCount": 674,
+  "sources": [
+    {
+      "path": "scripts/avatar-sources/open-source-avatar-master-01.png",
+      "sha256": "81ffbb335fb860e77d7a3e585a4e9fd45c041c14f74283ac084b5f718e51b7b2"
+    },
+    {
+      "path": "scripts/avatar-sources/open-source-avatar-master-02.png",
+      "sha256": "203af391f918da27d613c9814bad55fca33ebbacfa673ae3c0148d080624e698"
+    },
+    {
+      "path": "scripts/avatar-sources/open-source-avatar-master-03.png",
+      "sha256": "e57755175c40236d0a1a30397213c6eea92eb2fb4dd1d91f65d0671729fd0b1a"
+    },
+    {
+      "path": "scripts/avatar-sources/open-source-avatar-master-04.png",
+      "sha256": "555e522b2d49fe36563847069d4ebe2a79c2c2528a7b0e23b7dd5d3e3d40da31"
+    }
+  ],
+  "generator": {
+    "path": "scripts/generate-stylized-avatars.py",
+    "sha256": "79d2ca514fe4d68bcce42e1c7ff8aeffdc092212d2b4f31bf903c10116be4e1c"
+  },
+  "outputs": {
+    "svgCollection": {
+      "directory": "src/assets/synthetic-avatars",
+      "count": 674,
+      "sha256": "eb93e2feb237766428e9140dd132460dcd13a6e7a8bd2ffb0758be1f6bda3f02"
+    },
+    "atlas": {
+      "path": "public/assets/avatar-atlas.png",
+      "columns": 32,
+      "rows": 22,
+      "cellSize": 96,
+      "width": 3072,
+      "height": 2112,
+      "sha256": "6b5d415bc05d66785c4589b09e7198b1c9675bec9d15f529aec983a5715278d4"
+    }
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "name": "growth-share",
+  "version": "0.1.0",
+  "description": "A brand-neutral React, Vite, and WebGL event-wall template with synthetic profiles and a repository-level Codex Skill.",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xchangee/growth-share.git"
+  },
+  "homepage": "https://github.com/xchangee/growth-share#readme",
+  "bugs": {
+    "url": "https://github.com/xchangee/growth-share/issues"
+  },
+  "keywords": [
+    "event-wall",
+    "react",
+    "vite",
+    "webgl",
+    "synthetic-data",
+    "codex-skill"
+  ],
+  "engines": {
+    "node": ">=22.12.0",
+    "npm": ">=10.9.0"
+  },
+  "packageManager": "npm@11.12.1",
+  "scripts": {
+    "generate:profiles": "node scripts/generate-synthetic-data.mjs",
+    "generate:avatars": "uv run --with-requirements scripts/requirements-avatar.txt python scripts/generate-stylized-avatars.py && npm run update:avatar-manifest",
+    "generate:synthetic": "npm run generate:profiles && npm run generate:avatars",
+    "generate:textures": "node scripts/generate-demo-textures.mjs",
+    "update:avatar-manifest": "node scripts/check-generated-assets.mjs --update-avatar-manifest",
+    "dev": "vite",
+    "typecheck": "tsc --noEmit",
+    "build:client": "vite build",
+    "build:sites": "npm run build:client && node scripts/prepare-sites-build.mjs",
+    "build": "npm run typecheck && npm run build:sites",
+    "preview": "vite preview",
+    "test:config": "node --test tests/vite-config.test.mjs",
+    "test:portability": "node scripts/check-subpath-build.mjs",
+    "test:sites:built": "node --test tests/sites-worker.test.mjs",
+    "test:sites": "npm run build && npm run test:sites:built",
+    "test": "npm run test:config && npm run test:sites",
+    "check:generated": "node scripts/check-generated-assets.mjs",
+    "check:assets": "node scripts/check-public-assets.mjs",
+    "check": "npm run typecheck && npm run check:generated && npm run test:config && npm run test:portability",
+    "audit": "npm audit --audit-level=high",
+    "verify": "npm run check && npm run check:assets && npm run build:sites && npm run test:sites:built && npm run audit"
+  },
+  "dependencies": {
+    "ogl": "1.0.11",
+    "react": "19.2.0",
+    "react-dom": "19.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "19.2.17",
+    "@types/react-dom": "19.2.3",
+    "@vitejs/plugin-react": "5.0.4",
+    "lucide-static": "1.33.0",
+    "typescript": "6.0.3",
+    "vite": "6.4.3"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "generator": {
+    "path": "scripts/generate-demo-textures.mjs",
+    "sha256": "0226cc306429e8ac8702b518f9397fff371df26341a4a381f3288b1fe9ad1e81"
+  },
+  "sourcePackage": {
+    "name": "lucide-static",
+    "version": "1.33.0",
+    "license": "ISC",
+    "licenseSha256": "b495047bd93a9b06913511076f504daba17d5bbeb3e0650f3bb53a4220329c57"
+  },
+  "grid": {
+    "width": 1920,
+    "height": 1080,
+    "columns": 24,
+    "rows": 13
+  },
+  "outputs": [
+    {
+      "path": "public/assets/pattern-texture.svg",
+      "bytes": 131154,
+      "sha256": "c32f8c41477bcbe74573b2c8585eecfe0901e3eb6d35d06493ccf4d3aec9c857"
+    },
+    {
+      "path": "public/assets/motif-unit-id.svg",
+      "bytes": 25365,
+      "sha256": "c7dc6e43024f68a014fab3ab339f741018c1c55a6e93891f5f89f6a6984c56b4"
+    },
+    {
+      "path": "public/assets/paper-grain.svg",
+      "bytes": 680,
+      "sha256": "7fcee83fe8aca096ef9716154a38662ccf183bf618ed3af15d293526f3907663"
+    },
+    {
+      "path": "public/assets/open-memory-symbol.svg",
+      "bytes": 719,
+      "sha256": "1d94e13a35fac96b97f8841d8281f7c6ce9f3e6397441bc067e18773278def35"
+    },
+    {
+      "path": "public/favicon.svg",
+      "bytes": 765,
+      "sha256": "cd876837f4b88f2f4636337780680b7c1b834e1ee340286ed2fbd3abefee376e"
+    }
+  ]
+}

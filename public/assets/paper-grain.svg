@@ -1,0 +1,11 @@
+<!-- Generated procedural paper texture; no external visual source. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" aria-hidden="true">
+  <filter id="grain" x="-12%" y="-12%" width="124%" height="124%" color-interpolation-filters="sRGB">
+    <feTurbulence type="fractalNoise" baseFrequency="0.62" numOctaves="3" seed="47" stitchTiles="stitch" result="noise"/>
+    <feColorMatrix in="noise" type="saturate" values="0" result="mono"/>
+    <feComponentTransfer in="mono">
+      <feFuncA type="table" tableValues="0 0.18"/>
+    </feComponentTransfer>
+  </filter>
+  <rect width="256" height="256" fill="#8f7859" filter="url(#grain)"/>
+</svg>
