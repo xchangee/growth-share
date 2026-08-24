@@ -46,6 +46,12 @@ Anyone replacing a master must record the tool or author, creation date, prompt 
 
 The source, generator and output hashes are machine-readable in `scripts/avatar-output.manifest.json`. `npm run check:generated` validates the committed set without changing it. `npm run generate:avatars` replaces the outputs and manifest only after staged validation.
 
+## Documentation preview
+
+| Path | Origin | SHA-256 | License and status |
+| --- | --- | --- | --- |
+| `docs/assets/preview.jpg` | Browser screenshot captured on 2026-08-24 from this repository's rendered 02 `OPEN / LAB` scene at 1237×720; it contains only the cleared synthetic portraits and generated neutral assets documented above | `8291587870cee5eb5ca2219b2a5aa64c7927ce2027edfb67a18ae794018b42dd` | Repository MIT License for the composition and already-cleared source assets; **Cleared** |
+
 ## Removed legacy assets
 
 The public release excludes the previous company/event artwork, company mission, former `TAL`/`XES` wording and music with no redistribution record. Files formerly named `business-forum*.svg` and `background-music.mp3` must not be restored from a private project or copied into a public release.
