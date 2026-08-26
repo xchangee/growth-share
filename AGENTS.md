@@ -12,4 +12,6 @@ This public-share project must contain synthetic profile data only. Generate pro
 
 Keep the public template brand-neutral. Do not add company names, trademarks, internal event names, unlicensed fonts, music, photos, or decorative artwork. Avatar regeneration accepts only the four documented ImageGen masters in `scripts/avatar-sources/`; public motif assets must be regenerated with `npm run generate:textures` from the pinned Lucide source. Update `ASSET-PROVENANCE.md` whenever an allowed asset changes.
 
+Keep the public pattern texture aligned with the approved seal-texture direction: use a sparse 24×13 rhythm of larger, upright, framed motifs instead of a uniform field of small generic icons. Preserve this character through the pinned Lucide generator and provenance workflow rather than copying private artwork.
+
 Before declaring the repository ready, run `npm run verify` and validate 01/02/03 plus Q/W/E in the real browser. Preparing a build is not permission to publish it: never create a remote, push, deploy, submit a plugin, or otherwise make the project public unless the user explicitly requests that separate action.

@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "generator": {
     "path": "scripts/generate-demo-textures.mjs",
-    "sha256": "0226cc306429e8ac8702b518f9397fff371df26341a4a381f3288b1fe9ad1e81"
+    "sha256": "94e37f86177fba280370bd5dba6adb70e96028ff813b95c93b9a85c56770c4bc"
   },
   "sourcePackage": {
     "name": "lucide-static",
@@ -19,8 +19,8 @@
   "outputs": [
     {
       "path": "public/assets/pattern-texture.svg",
-      "bytes": 131154,
-      "sha256": "c32f8c41477bcbe74573b2c8585eecfe0901e3eb6d35d06493ccf4d3aec9c857"
+      "bytes": 166868,
+      "sha256": "3cba9539135daea6914d065ef11d9d665bdcce9fed7b2a5b839a7b50243808e6"
     },
     {
       "path": "public/assets/motif-unit-id.svg",

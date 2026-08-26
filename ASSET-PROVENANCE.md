@@ -2,7 +2,7 @@
 
 This file is the release gate for non-code assets. Source code being MIT-licensed does not automatically change the copyright, trademark, privacy or publicity rights of an asset.
 
-The assets listed below form the reviewed public release asset set as of 2026-08-22. A replacement must be reviewed again; a filename does not inherit the previous file's status.
+The assets listed below form the reviewed public repository asset set as of 2026-08-26. A replacement must be reviewed again; a filename does not inherit the previous file's status.
 
 ## Generated neutral textures and icons
 
@@ -10,13 +10,15 @@ The assets listed below form the reviewed public release asset set as of 2026-08
 
 | Path | Origin | SHA-256 | License and status |
 | --- | --- | --- | --- |
-| `public/assets/pattern-texture.svg` | 24×13 deterministic grid composed from pinned Lucide icon geometry | `c32f8c41477bcbe74573b2c8585eecfe0901e3eb6d35d06493ccf4d3aec9c857` | Lucide ISC/Feather MIT notices plus repository MIT for the composition; **Cleared** |
+| `public/assets/pattern-texture.svg` | 24×13 deterministic grid of pinned Lucide icon geometry inside project-authored geometric seal frames | `3cba9539135daea6914d065ef11d9d665bdcce9fed7b2a5b839a7b50243808e6` | Lucide ISC/Feather MIT notices plus repository MIT for the composition; **Cleared** |
 | `public/assets/motif-unit-id.svg` | Project-generated technical 24×13 coordinate map; no external visual source | `c7dc6e43024f68a014fab3ab339f741018c1c55a6e93891f5f89f6a6984c56b4` | Repository MIT License; **Cleared** |
 | `public/assets/paper-grain.svg` | Project-generated SVG turbulence texture; no external visual source | `7fcee83fe8aca096ef9716154a38662ccf183bf618ed3af15d293526f3907663` | Repository MIT License; **Cleared** |
 | `public/assets/open-memory-symbol.svg` | Generated from Lucide `sparkles` geometry | `1d94e13a35fac96b97f8841d8281f7c6ce9f3e6397441bc067e18773278def35` | Lucide ISC plus repository MIT for the composition; **Cleared** |
 | `public/favicon.svg` | Generated from Lucide `sparkles` geometry with a project-authored neutral frame and title | `cd876837f4b88f2f4636337780680b7c1b834e1ee340286ed2fbd3abefee376e` | Lucide ISC plus repository MIT for the composition; **Cleared** |
 
 Run `npm run generate:textures` after intentionally changing the generator, pinned package or icon set. `npm run check:assets` verifies these files against the manifest and rejects extra public media.
+
+The pattern composition was revised on 2026-08-26 to reproduce the larger framed-motif scale, sparse rhythm and print-like texture of the approved visual reference. It uses only the pinned Lucide geometry and project-authored frames; no SVG path, Illustrator source or branded artwork from the private reference project was copied.
 
 ## AI-generated fictional portrait masters
 
@@ -50,7 +52,7 @@ The source, generator and output hashes are machine-readable in `scripts/avatar-
 
 | Path | Origin | SHA-256 | License and status |
 | --- | --- | --- | --- |
-| `docs/assets/preview.jpg` | Browser screenshot captured on 2026-08-24 from this repository's rendered 02 `OPEN / LAB` scene at 1237×720; it contains only the cleared synthetic portraits and generated neutral assets documented above | `8291587870cee5eb5ca2219b2a5aa64c7927ce2027edfb67a18ae794018b42dd` | Repository MIT License for the composition and already-cleared source assets; **Cleared** |
+| `docs/assets/preview.jpg` | Browser screenshot captured on 2026-08-26 from this repository's rendered 02 `OPEN / LAB` scene at 1280×720 after the generated seal-texture revision; it contains only the cleared synthetic portraits and generated neutral assets documented above | `fac9c84b0534bf4061aa068b73faac4a31efc9739f1bc981d24e587b554c8bb9` | Repository MIT License for the composition and already-cleared source assets; **Cleared** |
 
 ## Removed legacy assets
 
