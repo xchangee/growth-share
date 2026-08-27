@@ -52,7 +52,9 @@ The source, generator and output hashes are machine-readable in `scripts/avatar-
 
 | Path | Origin | SHA-256 | License and status |
 | --- | --- | --- | --- |
-| `docs/assets/preview.jpg` | Browser screenshot captured on 2026-08-27 from this repository's rendered 02 `OPEN` state at 1280×720 with the centered upright seal texture and enabled music control visible; it contains only the cleared synthetic portraits and generated neutral assets documented above | `9ea8fe97dbc2de4d27268eb2b0b02366736c11199bd7dd6615c84d6f6abeef9b` | Repository MIT License for the composition and already-cleared source assets; **Cleared** |
+| `docs/assets/preview-01-profile.png` | User-supplied browser screenshot captured on 2026-08-27 from this repository's rendered 01 profile state at 2616×1244; the displayed `profile-0319` name and 6302-day value come from the committed synthetic profile generator, and the frame contains only cleared repository assets | `5969359a9fc903bf7f694e05cb3b692d7dce89cd84a418ed2a78c38c16e48f5f` | Repository MIT License for the composition and already-cleared source assets; **Cleared** |
+| `docs/assets/preview-02-letters.png` | User-supplied browser screenshot captured on 2026-08-27 from this repository's rendered 02 avatar-letter state at 2816×1172; it contains only the cleared synthetic portraits and generated neutral assets documented above | `08e6e910389907b9c174f45609358a035a27cfcd950de512c74e7ea4873a917c` | Repository MIT License for the composition and already-cleared source assets; **Cleared** |
+| `docs/assets/preview-03-main-visual.png` | User-supplied browser screenshot captured on 2026-08-27 from this repository's rendered 03 main-visual state at 2810×1164; it contains only the cleared synthetic portraits and generated neutral assets documented above | `505f7515f3cfc157aa87913efcae0cbaedb1ff72771caa5c611196c3806cb78e` | Repository MIT License for the composition and already-cleared source assets; **Cleared** |
 
 ## Background music
 

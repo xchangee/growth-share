@@ -20,4 +20,6 @@ Keep isolated seal motifs strictly upright, centered on their generated 24×13 c
 
 When `pattern-texture.svg` changes, update the `?v=` suffix on every `src/App.css` and `TextureStage.tsx` consumer to the new asset SHA-256 prefix. OneStack serves this public asset from a stable CDN path, so an unchanged URL can continue returning a previous texture after upload.
 
+Keep the README online-preview section ordered as 01 profile, 02 avatar letters and 03 main visual. Each preview image must continue linking to `https://xchangee.github.io/growth-share/`, and replacing a screenshot requires updating its exact hash and clearance record in `ASSET-PROVENANCE.md`.
+
 Before declaring the repository ready, run `npm run verify` and validate 01/02/03 plus Q/W/E in the real browser. Preparing a build is not permission to publish it: never create a remote, push, deploy, submit a plugin, or otherwise make the project public unless the user explicitly requests that separate action.

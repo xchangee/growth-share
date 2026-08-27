@@ -8,7 +8,11 @@
 
 ## 在线预览
 
-[![Growth Share 活动视觉墙预览](docs/assets/preview.jpg)](https://xchangee.github.io/growth-share/)
+[![Growth Share 01 合成人物档案预览](docs/assets/preview-01-profile.png)](https://xchangee.github.io/growth-share/)
+
+[![Growth Share 02 头像字形预览](docs/assets/preview-02-letters.png)](https://xchangee.github.io/growth-share/)
+
+[![Growth Share 03 活动主视觉预览](docs/assets/preview-03-main-visual.png)](https://xchangee.github.io/growth-share/)
 
 [打开在线演示 →](https://xchangee.github.io/growth-share/)
 
