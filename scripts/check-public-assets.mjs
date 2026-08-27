@@ -1,4 +1,5 @@
 import { spawnSync } from 'node:child_process'
+import { createHash } from 'node:crypto'
 import { readFile, readdir } from 'node:fs/promises'
 import { dirname, join, relative, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
@@ -9,6 +10,7 @@ const publicDirectory = join(projectRoot, 'public')
 
 const expectedPublicFiles = new Set([
   'assets/avatar-atlas.png',
+  'assets/calm-track-pmiller.mp3',
   'assets/motif-unit-id.svg',
   'assets/open-memory-symbol.svg',
   'assets/paper-grain.svg',
@@ -34,6 +36,19 @@ const forbiddenRuntimeStrings = [
   'I ❤ XES',
 ]
 
+const approvedMusic = {
+  path: 'assets/calm-track-pmiller.mp3',
+  sha256: '7d95f5c9c1b7de6fbb7b292746eeb1047fedd9de950e7feaf8ee5e0522396dca',
+  source: 'assets/calm-track-pmiller.mp3?v=7d95f5c9c1b7',
+  provenanceMarkers: [
+    'Calm Track',
+    'pmiller',
+    'https://opengameart.org/content/calm-track',
+    'CC0 1.0 Universal',
+    '7d95f5c9c1b7de6fbb7b292746eeb1047fedd9de950e7feaf8ee5e0522396dca',
+  ],
+}
+
 async function listFiles(directory) {
   const files = []
   for (const entry of await readdir(directory, { withFileTypes: true })) {
@@ -53,6 +68,10 @@ async function listRuntimeTextFiles(directory) {
     else if (/\.(?:css|html|js|jsx|mjs|ts|tsx|svg)$/.test(entry.name)) files.push(path)
   }
   return files
+}
+
+async function sha256(path) {
+  return createHash('sha256').update(await readFile(path)).digest('hex')
 }
 
 function validateGeneratedTextures() {
@@ -87,9 +106,17 @@ async function main() {
   }
 
   const forbiddenFiles = relativePublicFiles.filter((path) =>
-    forbiddenFilePatterns.some((pattern) => pattern.test(path)))
+    path !== approvedMusic.path
+    && forbiddenFilePatterns.some((pattern) => pattern.test(path)))
   if (forbiddenFiles.length) {
     throw new Error(`Forbidden public media remains: ${forbiddenFiles.join(', ')}`)
+  }
+
+  const musicHash = await sha256(join(publicDirectory, approvedMusic.path))
+  if (musicHash !== approvedMusic.sha256) {
+    throw new Error(
+      `Approved music hash mismatch; expected=${approvedMusic.sha256}; actual=${musicHash}`,
+    )
   }
 
   const runtimeTextFiles = [
@@ -109,8 +136,18 @@ async function main() {
   }
 
   const siteConfig = await readFile(join(projectRoot, 'src/config/site.ts'), 'utf8')
-  if (!/source:\s*null\s+as\s+string\s*\|\s*null/.test(siteConfig)) {
-    throw new Error('Public template must keep bundled music disabled by default')
+  if (!siteConfig.includes(`source: '${approvedMusic.source}' as string | null`)) {
+    throw new Error('Public template music source must match its approved file and hash suffix')
+  }
+
+  const provenance = await readFile(join(projectRoot, 'ASSET-PROVENANCE.md'), 'utf8')
+  const missingProvenanceMarkers = approvedMusic.provenanceMarkers.filter(
+    (marker) => !provenance.includes(marker),
+  )
+  if (missingProvenanceMarkers.length) {
+    throw new Error(
+      `Approved music provenance is incomplete: ${missingProvenanceMarkers.join(', ')}`,
+    )
   }
 
   const generatedResult = validateGeneratedTextures()

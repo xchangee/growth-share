@@ -1964,7 +1964,7 @@ export function TextureStage({
       setRendererState('fallback')
       setAssetFailed(true)
     }
-    image.src = `${import.meta.env.BASE_URL}assets/pattern-texture.svg`
+    image.src = `${import.meta.env.BASE_URL}assets/pattern-texture.svg?v=66051a3bdeb8`
 
     const unitMapImage = new Image()
     unitMapImage.crossOrigin = 'anonymous'

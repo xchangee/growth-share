@@ -35,9 +35,9 @@
 .texture-fallback {
   z-index: 1;
     background: var(--fallback-texture);
-    -webkit-mask: url('/assets/pattern-texture.svg') center / var(--motif-scale)
+    -webkit-mask: url('/assets/pattern-texture.svg?v=66051a3bdeb8') center / var(--motif-scale)
       auto repeat;
-    mask: url('/assets/pattern-texture.svg') center / var(--motif-scale) auto
+    mask: url('/assets/pattern-texture.svg?v=66051a3bdeb8') center / var(--motif-scale) auto
       repeat;
     transform: scale(1.01);
 }
@@ -455,11 +455,11 @@
     width: calc(25 * var(--archive-u));
     height: calc(25 * var(--archive-u));
     background: var(--archive-gold);
-    -webkit-mask-image: url('/assets/pattern-texture.svg');
+    -webkit-mask-image: url('/assets/pattern-texture.svg?v=66051a3bdeb8');
     -webkit-mask-position: var(--archive-motif-x) var(--archive-motif-y);
     -webkit-mask-repeat: no-repeat;
     -webkit-mask-size: var(--archive-motif-width) var(--archive-motif-height);
-    mask-image: url('/assets/pattern-texture.svg');
+    mask-image: url('/assets/pattern-texture.svg?v=66051a3bdeb8');
     mask-position: var(--archive-motif-x) var(--archive-motif-y);
     mask-repeat: no-repeat;
     mask-size: var(--archive-motif-width) var(--archive-motif-height);
@@ -866,8 +866,8 @@
     content: '';
     pointer-events: none;
     background: rgb(17 47 61 / 88%);
-    -webkit-mask: url('/assets/pattern-texture.svg') center / 260px auto repeat;
-    mask: url('/assets/pattern-texture.svg') center / 260px auto repeat;
+    -webkit-mask: url('/assets/pattern-texture.svg?v=66051a3bdeb8') center / 260px auto repeat;
+    mask: url('/assets/pattern-texture.svg?v=66051a3bdeb8') center / 260px auto repeat;
     opacity: 0.09;
 }
 
@@ -917,8 +917,8 @@
     inset: 12%;
     display: block;
     background: rgb(243 215 158 / 84%);
-    -webkit-mask: url('/assets/pattern-texture.svg') center / 160px auto repeat;
-    mask: url('/assets/pattern-texture.svg') center / 160px auto repeat;
+    -webkit-mask: url('/assets/pattern-texture.svg?v=66051a3bdeb8') center / 160px auto repeat;
+    mask: url('/assets/pattern-texture.svg?v=66051a3bdeb8') center / 160px auto repeat;
 }
 
 .archive-topic-ribbon {
@@ -997,8 +997,8 @@
     content: '';
     pointer-events: none;
     background: rgb(203 164 103 / 88%);
-    -webkit-mask: url('/assets/pattern-texture.svg') center / 500px auto repeat;
-    mask: url('/assets/pattern-texture.svg') center / 500px auto repeat;
+    -webkit-mask: url('/assets/pattern-texture.svg?v=66051a3bdeb8') center / 500px auto repeat;
+    mask: url('/assets/pattern-texture.svg?v=66051a3bdeb8') center / 500px auto repeat;
     opacity: 0.17;
 }
 
@@ -1242,8 +1242,8 @@
     content: '';
     pointer-events: none;
     background: #716e66;
-    -webkit-mask: url('/assets/pattern-texture.svg') center / calc(890 * var(--archive-u)) auto repeat;
-    mask: url('/assets/pattern-texture.svg') center / calc(890 * var(--archive-u)) auto repeat;
+    -webkit-mask: url('/assets/pattern-texture.svg?v=66051a3bdeb8') center / calc(890 * var(--archive-u)) auto repeat;
+    mask: url('/assets/pattern-texture.svg?v=66051a3bdeb8') center / calc(890 * var(--archive-u)) auto repeat;
     -webkit-mask-position: var(--archive-texture-position, center);
     mask-position: var(--archive-texture-position, center);
     opacity: 0.08;
@@ -1411,8 +1411,8 @@
     width: calc(1159 * var(--archive-u));
     pointer-events: none;
     background: #c1a371;
-    -webkit-mask: url('/assets/pattern-texture.svg') center / calc(680 * var(--archive-u)) auto repeat;
-    mask: url('/assets/pattern-texture.svg') center / calc(680 * var(--archive-u)) auto repeat;
+    -webkit-mask: url('/assets/pattern-texture.svg?v=66051a3bdeb8') center / calc(680 * var(--archive-u)) auto repeat;
+    mask: url('/assets/pattern-texture.svg?v=66051a3bdeb8') center / calc(680 * var(--archive-u)) auto repeat;
     -webkit-mask-position: var(--archive-texture-position, center);
     mask-position: var(--archive-texture-position, center);
     opacity: 0.055;
@@ -1450,8 +1450,8 @@
     content: '';
     pointer-events: none;
     background: #243b4b;
-    -webkit-mask: url('/assets/pattern-texture.svg') center / calc(760 * var(--archive-u)) auto repeat;
-    mask: url('/assets/pattern-texture.svg') center / calc(760 * var(--archive-u)) auto repeat;
+    -webkit-mask: url('/assets/pattern-texture.svg?v=66051a3bdeb8') center / calc(760 * var(--archive-u)) auto repeat;
+    mask: url('/assets/pattern-texture.svg?v=66051a3bdeb8') center / calc(760 * var(--archive-u)) auto repeat;
     -webkit-mask-position: var(--archive-texture-position, center);
     mask-position: var(--archive-texture-position, center);
     opacity: 0.11;
@@ -1509,8 +1509,8 @@
     z-index: 0;
     content: '';
     background: #cba66d;
-    -webkit-mask: url('/assets/pattern-texture.svg') center / calc(420 * var(--archive-u)) auto repeat;
-    mask: url('/assets/pattern-texture.svg') center / calc(420 * var(--archive-u)) auto repeat;
+    -webkit-mask: url('/assets/pattern-texture.svg?v=66051a3bdeb8') center / calc(420 * var(--archive-u)) auto repeat;
+    mask: url('/assets/pattern-texture.svg?v=66051a3bdeb8') center / calc(420 * var(--archive-u)) auto repeat;
     -webkit-mask-position: var(--archive-texture-position, center);
     mask-position: var(--archive-texture-position, center);
     opacity: 0.11;
@@ -1524,11 +1524,11 @@
     height: calc(46 * var(--archive-u));
     place-self: center;
     background: rgb(215 180 122 / 88%);
-    -webkit-mask-image: url('/assets/pattern-texture.svg');
+    -webkit-mask-image: url('/assets/pattern-texture.svg?v=66051a3bdeb8');
     -webkit-mask-position: var(--archive-motif-x) var(--archive-motif-y);
     -webkit-mask-repeat: no-repeat;
     -webkit-mask-size: var(--archive-motif-width) var(--archive-motif-height);
-    mask-image: url('/assets/pattern-texture.svg');
+    mask-image: url('/assets/pattern-texture.svg?v=66051a3bdeb8');
     mask-position: var(--archive-motif-x) var(--archive-motif-y);
     mask-repeat: no-repeat;
     mask-size: var(--archive-motif-width) var(--archive-motif-height);
@@ -1664,11 +1664,11 @@
     width: calc(46 * var(--archive-u));
     height: calc(46 * var(--archive-u));
     background: rgb(31 54 70 / 88%);
-    -webkit-mask-image: url('/assets/pattern-texture.svg');
+    -webkit-mask-image: url('/assets/pattern-texture.svg?v=66051a3bdeb8');
     -webkit-mask-position: var(--archive-motif-x) var(--archive-motif-y);
     -webkit-mask-repeat: no-repeat;
     -webkit-mask-size: var(--archive-motif-width) var(--archive-motif-height);
-    mask-image: url('/assets/pattern-texture.svg');
+    mask-image: url('/assets/pattern-texture.svg?v=66051a3bdeb8');
     mask-position: var(--archive-motif-x) var(--archive-motif-y);
     mask-repeat: no-repeat;
     mask-size: var(--archive-motif-width) var(--archive-motif-height);
@@ -1768,8 +1768,8 @@
     content: '';
     pointer-events: none;
     background: #8f806b;
-    -webkit-mask: url('/assets/pattern-texture.svg') center / calc(430 * var(--archive-u)) auto repeat;
-    mask: url('/assets/pattern-texture.svg') center / calc(430 * var(--archive-u)) auto repeat;
+    -webkit-mask: url('/assets/pattern-texture.svg?v=66051a3bdeb8') center / calc(430 * var(--archive-u)) auto repeat;
+    mask: url('/assets/pattern-texture.svg?v=66051a3bdeb8') center / calc(430 * var(--archive-u)) auto repeat;
     -webkit-mask-position: var(--archive-texture-position, center);
     mask-position: var(--archive-texture-position, center);
     opacity: 0.085;
@@ -1833,11 +1833,11 @@
     width: calc(28 * var(--archive-u));
     height: calc(28 * var(--archive-u));
     background: #1e2c3b;
-    -webkit-mask-image: url('/assets/pattern-texture.svg');
+    -webkit-mask-image: url('/assets/pattern-texture.svg?v=66051a3bdeb8');
     -webkit-mask-position: var(--archive-motif-x) var(--archive-motif-y);
     -webkit-mask-repeat: no-repeat;
     -webkit-mask-size: var(--archive-motif-width) var(--archive-motif-height);
-    mask-image: url('/assets/pattern-texture.svg');
+    mask-image: url('/assets/pattern-texture.svg?v=66051a3bdeb8');
     mask-position: var(--archive-motif-x) var(--archive-motif-y);
     mask-repeat: no-repeat;
     mask-size: var(--archive-motif-width) var(--archive-motif-height);
@@ -1897,8 +1897,8 @@
     content: '';
     pointer-events: none;
     background: #c4a876;
-    -webkit-mask: url('/assets/pattern-texture.svg') center / calc(660 * var(--archive-u)) auto repeat;
-    mask: url('/assets/pattern-texture.svg') center / calc(660 * var(--archive-u)) auto repeat;
+    -webkit-mask: url('/assets/pattern-texture.svg?v=66051a3bdeb8') center / calc(660 * var(--archive-u)) auto repeat;
+    mask: url('/assets/pattern-texture.svg?v=66051a3bdeb8') center / calc(660 * var(--archive-u)) auto repeat;
     -webkit-mask-position: var(--archive-texture-position, center);
     mask-position: var(--archive-texture-position, center);
     opacity: 0.062;

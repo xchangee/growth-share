@@ -178,17 +178,22 @@ const archiveFrameScene = getArchiveScene('archive-frame-base')
 const archivePattern = {
   width: 1920,
   height: 1080,
+  columns: 24,
+  rows: 13,
 }
 
+// These coordinates address one cell from each generated seal-frame family.
+// Every selected cell has empty horizontal neighbours, so their strokes cannot
+// bleed into the isolated motif crop used by the narrow topic strip.
 const archiveMotifCells = [
-  { x: 329.927, y: 333.465, width: 83.402, height: 84.055 },
-  { x: 413.329, y: 333.465, width: 83.402, height: 84.055 },
-  { x: 580.133, y: 333.465, width: 83.402, height: 84.055 },
-  { x: 329.927, y: 417.52, width: 83.402, height: 82.165 },
-  { x: 580.133, y: 417.52, width: 83.402, height: 82.165 },
-  { x: 329.927, y: 499.685, width: 83.402, height: 82.2 },
-  { x: 413.329, y: 499.685, width: 83.402, height: 82.2 },
-  { x: 580.133, y: 499.685, width: 83.402, height: 82.2 },
+  { column: 5, row: 0 },
+  { column: 11, row: 1 },
+  { column: 4, row: 2 },
+  { column: 10, row: 3 },
+  { column: 3, row: 4 },
+  { column: 9, row: 5 },
+  { column: 2, row: 6 },
+  { column: 8, row: 7 },
 ] as const
 
 function getArchiveMotifStyle(seed: number) {
@@ -196,10 +201,10 @@ function getArchiveMotifStyle(seed: number) {
   const crop = archiveMotifCells[stableRandom % archiveMotifCells.length]
 
   return {
-    '--archive-motif-x': `${(crop.x / (archivePattern.width - crop.width)) * 100}%`,
-    '--archive-motif-y': `${(crop.y / (archivePattern.height - crop.height)) * 100}%`,
-    '--archive-motif-width': `${(archivePattern.width / crop.width) * 100}%`,
-    '--archive-motif-height': `${(archivePattern.height / crop.height) * 100}%`,
+    '--archive-motif-x': `${(crop.column / (archivePattern.columns - 1)) * 100}%`,
+    '--archive-motif-y': `${(crop.row / (archivePattern.rows - 1)) * 100}%`,
+    '--archive-motif-width': `${archivePattern.columns * 100}%`,
+    '--archive-motif-height': `${archivePattern.rows * 100}%`,
   } as CSSProperties
 }
 

@@ -105,8 +105,8 @@ export const siteConfig = {
     ],
   },
   music: {
-    /** Add a redistributable local file path after documenting its license. */
-    source: null as string | null,
+    /** Reviewed CC0 track; keep its provenance, hash and allowlist entry in sync. */
+    source: 'assets/calm-track-pmiller.mp3?v=7d95f5c9c1b7' as string | null,
     volume: 0.28,
     unavailableLabel: '未配置可再分发的背景音乐',
   },

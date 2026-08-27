@@ -10,7 +10,7 @@ Ordinary rebranding should begin in `src/config/site.ts`. It centralizes:
 - the letter sequence shown by the WebGL scene;
 - the optional background-music URL.
 
-Keep the default identity neutral. Do not reintroduce a company name, logo, mission statement, internal event name or music unless the publisher has recorded its rights in `ASSET-PROVENANCE.md`.
+Keep the default identity neutral. Do not reintroduce a company name, logo, mission statement, internal event name or unreviewed music. Every bundled track must have its rights and exact shipped hash recorded in `ASSET-PROVENANCE.md`.
 
 After a configuration change, run the app and verify all three scenes. Configuration values may appear in HTML metadata, controls, accessible names, overlays and WebGL masks; search the full repository for old wording before declaring a rebrand complete.
 
@@ -47,14 +47,15 @@ Keep `prefers-reduced-motion` and the static fallback functional. A visual chang
 
 ### Music
 
-The public default has no music URL. Setting one enables the existing audio control; browsers may still require a user gesture before playback.
+The public default ships the reviewed CC0 track recorded in `ASSET-PROVENANCE.md`. Its URL enables the existing audio control; browsers may still require a user gesture before playback. Set `source` to `null` to disable music in a derivative.
 
 Before adding a file:
 
 1. confirm redistribution, modification and commercial-use terms;
 2. add title, author, source, license and attribution to `ASSET-PROVENANCE.md`;
 3. store only the necessary encoded file and remove private metadata;
-4. test play, pause, loop, failure and disabled states.
+4. update the exact audio allowlist, SHA-256 check and `?v=` cache suffix in `scripts/check-public-assets.mjs`;
+5. test play, pause, loop, autoplay-blocked recovery, failure and disabled states.
 
 Do not use a local streaming cache, protected media or a track with unknown provenance.
 

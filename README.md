@@ -12,7 +12,7 @@
 
 [打开在线演示 →](https://xchangee.github.io/growth-share/)
 
-在线演示包含 01 人物档案、02 头像字形与 03 活动主视觉三种场景；可点击右上角切换器，或使用 Q、W、E 键切换。
+在线演示包含 01 人物档案、02 头像字形与 03 活动主视觉三种场景，并内置经审核的 CC0 循环背景音乐；可点击右上角切换器、音乐按钮，或使用 Q、W、E 键切换。
 
 ## 功能
 
@@ -20,6 +20,7 @@
 - 02：由虚构头像组成的动态文字序列。
 - 03：可配置的活动主视觉。
 - Q、W、E 键或页面切换器可在三种场景间切换。
+- 内置经来源与哈希审核的 CC0 循环背景音乐，支持播放与暂停。
 - 支持 `prefers-reduced-motion` 和 WebGL 初始化失败时的静态降级。
 - 可同时生成普通静态站点和 Sites 交付产物。
 
@@ -64,7 +65,7 @@ npm run preview
 
 - `build:client` 生成浏览器静态资源。
 - `check:generated` 只读校验人物资料、4 张头像母版、674 个 SVG、生成器和 atlas 是否与 manifest 一致。
-- `check:assets` 校验公开素材白名单、来源 manifest 与禁用的旧品牌/音乐文件。
+- `check:assets` 校验公开素材白名单、来源 manifest、获批音乐的精确哈希，以及禁用的旧品牌/未审核媒体文件。
 - `build` 完成类型检查、客户端构建和 Sites 包装。
 - `test:sites` 会自行构建并测试 Sites worker；已有构建产物时可使用 `test:sites:built`。
 - 完整构建应留下 `dist/client/index.html`、`dist/server/index.js` 和 `dist/.openai/hosting.json`。

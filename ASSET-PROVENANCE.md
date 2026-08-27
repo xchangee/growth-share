@@ -2,7 +2,7 @@
 
 This file is the release gate for non-code assets. Source code being MIT-licensed does not automatically change the copyright, trademark, privacy or publicity rights of an asset.
 
-The assets listed below form the reviewed public repository asset set as of 2026-08-26. A replacement must be reviewed again; a filename does not inherit the previous file's status.
+The assets listed below form the reviewed public repository asset set as of 2026-08-27. A replacement must be reviewed again; a filename does not inherit the previous file's status.
 
 ## Generated neutral textures and icons
 
@@ -10,7 +10,7 @@ The assets listed below form the reviewed public repository asset set as of 2026
 
 | Path | Origin | SHA-256 | License and status |
 | --- | --- | --- | --- |
-| `public/assets/pattern-texture.svg` | 24×13 deterministic grid of pinned Lucide icon geometry inside project-authored geometric seal frames | `3cba9539135daea6914d065ef11d9d665bdcce9fed7b2a5b839a7b50243808e6` | Lucide ISC/Feather MIT notices plus repository MIT for the composition; **Cleared** |
+| `public/assets/pattern-texture.svg` | 24×13 deterministic grid of pinned Lucide icon geometry inside project-authored geometric seal frames | `66051a3bdeb883b5f24ccd9eb984cc228af98367217d2a49e7ef81f3ac65859d` | Lucide ISC/Feather MIT notices plus repository MIT for the composition; **Cleared** |
 | `public/assets/motif-unit-id.svg` | Project-generated technical 24×13 coordinate map; no external visual source | `c7dc6e43024f68a014fab3ab339f741018c1c55a6e93891f5f89f6a6984c56b4` | Repository MIT License; **Cleared** |
 | `public/assets/paper-grain.svg` | Project-generated SVG turbulence texture; no external visual source | `7fcee83fe8aca096ef9716154a38662ccf183bf618ed3af15d293526f3907663` | Repository MIT License; **Cleared** |
 | `public/assets/open-memory-symbol.svg` | Generated from Lucide `sparkles` geometry | `1d94e13a35fac96b97f8841d8281f7c6ce9f3e6397441bc067e18773278def35` | Lucide ISC plus repository MIT for the composition; **Cleared** |
@@ -18,7 +18,7 @@ The assets listed below form the reviewed public repository asset set as of 2026
 
 Run `npm run generate:textures` after intentionally changing the generator, pinned package or icon set. `npm run check:assets` verifies these files against the manifest and rejects extra public media.
 
-The pattern composition was revised on 2026-08-26 to reproduce the larger framed-motif scale, sparse rhythm and print-like texture of the approved visual reference. It uses only the pinned Lucide geometry and project-authored frames; no SVG path, Illustrator source or branded artwork from the private reference project was copied.
+The pattern composition was revised on 2026-08-26 to reproduce the larger framed-motif scale, sparse rhythm and print-like texture of the approved visual reference. On 2026-08-27 its generator was refined to keep every seal upright, align the visible bounds of asymmetric Lucide icons with the seal-frame center, and disable SVG aspect-ratio letterboxing so CSS 24×13 sprite crops remain centered. It uses only the pinned Lucide geometry and project-authored frames; no SVG path, Illustrator source or branded artwork from the private reference project was copied.
 
 ## AI-generated fictional portrait masters
 
@@ -52,13 +52,23 @@ The source, generator and output hashes are machine-readable in `scripts/avatar-
 
 | Path | Origin | SHA-256 | License and status |
 | --- | --- | --- | --- |
-| `docs/assets/preview.jpg` | Browser screenshot captured on 2026-08-26 from this repository's rendered 02 `OPEN / LAB` scene at 1280×720 after the generated seal-texture revision; it contains only the cleared synthetic portraits and generated neutral assets documented above | `fac9c84b0534bf4061aa068b73faac4a31efc9739f1bc981d24e587b554c8bb9` | Repository MIT License for the composition and already-cleared source assets; **Cleared** |
+| `docs/assets/preview.jpg` | Browser screenshot captured on 2026-08-27 from this repository's rendered 02 `OPEN` state at 1280×720 with the centered upright seal texture and enabled music control visible; it contains only the cleared synthetic portraits and generated neutral assets documented above | `9ea8fe97dbc2de4d27268eb2b0b02366736c11199bd7dd6615c84d6f6abeef9b` | Repository MIT License for the composition and already-cleared source assets; **Cleared** |
+
+## Background music
+
+| Path | Work and source | SHA-256 | License and status |
+| --- | --- | --- | --- |
+| `public/assets/calm-track-pmiller.mp3` | Loopable version of **“Calm Track”** by **pmiller**; source page: <https://opengameart.org/content/calm-track>; original download: <https://opengameart.org/sites/default/files/calm_track-loop.ogg> | `7d95f5c9c1b7de6fbb7b292746eeb1047fedd9de950e7feaf8ee5e0522396dca` | [CC0 1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/), which permits copying, modification, distribution, performance and commercial use without permission; **Cleared** |
+
+The OpenGameArt page labels the work CC0, describes the supplied file as loopable and says that attribution is not required. This repository nevertheless retains the voluntary credit: `Music: “Calm Track” by pmiller — CC0 1.0. Source: https://opengameart.org/content/calm-track.`
+
+The reviewed original Ogg Vorbis file is 44.1 kHz stereo, 249.237188 seconds and has SHA-256 `8c49a37fb9ee5994c919d0e43cf397dd990cb7f2c6c1200b9710a8fe942ad969`. For browser compatibility it was transcoded with FFmpeg to 128 kbps MP3, lowered by 1.5 dB to keep the decoded true peak below 0 dBFS, and stripped of container metadata. The shipped file is 44.1 kHz stereo, 249.237188 seconds, 3,989,001 bytes, measures approximately -15.9 LUFS integrated / -1.2 dBFS true peak before the application's `0.28` volume multiplier, and contains no format tags reported by `ffprobe`.
 
 ## Removed legacy assets
 
 The public release excludes the previous company/event artwork, company mission, former `TAL`/`XES` wording and music with no redistribution record. Files formerly named `business-forum*.svg` and `background-music.mp3` must not be restored from a private project or copied into a public release.
 
-The public configuration defaults to a neutral identity and no background music. Adding music requires a new row with title, author, source URL, exact license, attribution text, file hash and evidence that redistribution and the intended use are allowed.
+The public configuration defaults to a neutral identity and the reviewed CC0 track above. Replacing or removing it must update the title, author, source URL, exact license, attribution text, conversion record, file hash, cache suffix and evidence that redistribution and the intended use are allowed.
 
 Decorative texture or motif files may be shipped only when they appear as a cleared row in this document. Unlisted media is not approved by omission.
 

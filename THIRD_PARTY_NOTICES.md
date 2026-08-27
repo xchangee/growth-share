@@ -34,6 +34,12 @@ Transitive JavaScript packages and their integrity hashes are recorded in `packa
 
 These packages are optional build-time tools. They are only installed through uv when the avatar generator is run.
 
+## Background music
+
+“Calm Track” by pmiller is distributed under [CC0 1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/). Source: <https://opengameart.org/content/calm-track>.
+
+Attribution is not required by CC0, but this notice is retained as a voluntary credit. The bundled copy was transcoded from the author's loopable Ogg Vorbis file to MP3, reduced by 1.5 dB and stripped of metadata for web delivery. The exact source and shipped hashes are recorded in `ASSET-PROVENANCE.md`.
+
 ## Lucide icons
 
 The neutral pattern texture, memory symbol and favicon are generated from the Lucide icon set supplied by `lucide-static`. Source icon names are pinned in `scripts/generate-demo-textures.mjs`; the package version, license hash and output hashes are recorded in `scripts/demo-textures.manifest.json`. The following notices are retained from `lucide-static` 1.33.0.
