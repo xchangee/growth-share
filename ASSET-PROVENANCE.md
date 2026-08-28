@@ -33,7 +33,7 @@ Prompt summary: create square 8×8 contact sheets of distinct, purely fictional 
 | `scripts/avatar-sources/open-source-avatar-master-03.png` | `e57755175c40236d0a1a30397213c6eea92eb2fb4dd1d91f65d0671729fd0b1a` | **Cleared** |
 | `scripts/avatar-sources/open-source-avatar-master-04.png` | `555e522b2d49fe36563847069d4ebe2a79c2c2528a7b0e23b7dd5d3e3d40da31` | **Cleared** |
 
-To the extent copyright or related rights exist in these outputs and are held by Growth Share contributors, those contributors license the files under the repository MIT License. AI-generated output may receive different or no copyright protection in different jurisdictions, and generation does not guarantee non-infringement. The images are not presented as portraits of specific people and must not be used to assert, infer or verify anyone's identity.
+To the extent copyright or related rights exist in these outputs and are held by Open Creative Wall contributors, those contributors license the files under the repository MIT License. AI-generated output may receive different or no copyright protection in different jurisdictions, and generation does not guarantee non-infringement. The images are not presented as portraits of specific people and must not be used to assert, infer or verify anyone's identity.
 
 Anyone replacing a master must record the tool or author, creation date, prompt or source method, applicable terms, exact hash, whether references were used, and permission for redistribution, modification and commercial use.
 

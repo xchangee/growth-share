@@ -10,11 +10,11 @@ test("normalizes root, relative, subpath, and absolute URL base paths", () => {
   assert.equal(normalizeBasePath(undefined), "/");
   assert.equal(normalizeBasePath("/"), "/");
   assert.equal(normalizeBasePath("."), "./");
-  assert.equal(normalizeBasePath("growth-share"), "/growth-share/");
-  assert.equal(normalizeBasePath("/growth-share/"), "/growth-share/");
+  assert.equal(normalizeBasePath("open-creative-wall"), "/open-creative-wall/");
+  assert.equal(normalizeBasePath("/open-creative-wall/"), "/open-creative-wall/");
   assert.equal(
-    normalizeBasePath("https://cdn.example.test/growth-share"),
-    "https://cdn.example.test/growth-share/",
+    normalizeBasePath("https://cdn.example.test/open-creative-wall"),
+    "https://cdn.example.test/open-creative-wall/",
   );
 });
 

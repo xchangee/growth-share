@@ -1,6 +1,6 @@
 # Contributing
 
-Thanks for helping improve Growth Share. Keep contributions narrow, reproducible and safe to publish.
+Thanks for helping improve Open Creative Wall. Keep contributions narrow, reproducible and safe to publish.
 
 ## Before changing code
 

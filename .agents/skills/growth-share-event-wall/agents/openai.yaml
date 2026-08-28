@@ -1,7 +1,0 @@
-interface:
-  display_name: "Growth Share Event Wall"
-  short_description: "安全定制、重生合成资料并验收 Growth Share 活动视觉墙"
-  default_prompt: "Use $growth-share-event-wall to customize this event-wall template with synthetic-only data, validate it in a browser, and stop before publishing."
-
-policy:
-  allow_implicit_invocation: true

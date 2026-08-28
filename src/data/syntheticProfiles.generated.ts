@@ -8,7 +8,7 @@ export type SyntheticProfile = {
   dayCount: number
 }
 
-export const syntheticProfileSeed = "growth-share-public-v2"
+export const syntheticProfileSeed = "open-creative-wall-public-v2"
 
 export const syntheticProfiles: readonly SyntheticProfile[] = [
   {"profileId":"profile-0001","displayName":"郭晓晨","dayCount":2690},

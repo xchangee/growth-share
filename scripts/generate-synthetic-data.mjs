@@ -3,7 +3,9 @@ import { mkdir, readFile, rename, rm, writeFile } from 'node:fs/promises'
 import { dirname, join, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
 
-const DEFAULT_SEED = 'growth-share-public-v2'
+const DEFAULT_SEED = 'open-creative-wall-public-v2'
+// Preserve the reviewed v2 dataset while exposing the new public project name.
+const DEFAULT_PROFILE_RANDOM_STATE = 0x1db6f429
 const PROFILE_COUNT = 674
 const DAY_COUNT_MIN = 90
 const DAY_COUNT_MAX = 8600
@@ -121,7 +123,10 @@ function shuffled(values, random) {
 }
 
 function createProfiles(seed) {
-  const random = mulberry32(hashSeed(`${seed}\0profiles`))
+  const randomState = seed === DEFAULT_SEED
+    ? DEFAULT_PROFILE_RANDOM_STATE
+    : hashSeed(`${seed}\0profiles`)
+  const random = mulberry32(randomState)
   const namePool = surnames.flatMap((surname) =>
     givenNames.map((givenName) => `${surname}${givenName}`),
   )

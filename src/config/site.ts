@@ -10,8 +10,8 @@ export type LetterSequenceEntry = (typeof letterSequence)[number]
 export type LetterWord = LetterSequenceEntry['word']
 
 export const siteConfig = {
-  title: '开放创意墙',
-  description: '一个仅使用合成资料的开源活动视觉演示',
+  title: '开放创意墙｜Open Creative Wall',
+  description: '面向活动大屏的开源人物与创意视觉墙',
   pageAriaLabel: '开放创意墙动态视觉页面',
   railAriaLabel: '开放创意墙页眉与页脚',
   experienceOptions: [

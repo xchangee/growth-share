@@ -1,6 +1,6 @@
 # Community code of conduct
 
-Growth Share is intended to be a welcoming, practical project for people with different backgrounds and levels of experience.
+Open Creative Wall is intended to be a welcoming, practical project for people with different backgrounds and levels of experience.
 
 ## Expected behavior
 

@@ -38,7 +38,7 @@ jobs:
 
       - name: Build static site for the repository path
         env:
-          VITE_BASE_PATH: /growth-share/
+          VITE_BASE_PATH: /open-creative-wall/
         run: npm run build:client
 
       - name: Upload GitHub Pages artifact

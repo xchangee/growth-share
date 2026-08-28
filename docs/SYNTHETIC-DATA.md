@@ -2,7 +2,7 @@
 
 ## Privacy contract
 
-Growth Share is a public-demo template. It must never consume or approximate a real employee or attendee roster.
+Open Creative Wall is a public-demo template. It must never consume or approximate a real employee or attendee roster.
 
 Forbidden inputs include employee IDs, names copied from a roster, actual tenure or anniversary values, personal photos, private source paths, emails, phone numbers and reference images based on identifiable people. Removing an identifier after generation does not make a real-person source acceptable.
 
@@ -30,7 +30,7 @@ Or choose an explicit public-demo seed:
 npm run generate:profiles -- --seed community-demo-2026
 ```
 
-The script deterministically creates 674 unique profile IDs and display names, validates the day-count range and atomically writes `src/data/syntheticProfiles.generated.ts`. The seed is stored in the generated module for reproducibility.
+The script deterministically creates 674 unique profile IDs and display names, validates the day-count range and atomically writes `src/data/syntheticProfiles.generated.ts`. The default seed label is `open-creative-wall-public-v2`; its v2 random state is pinned so the existing public-demo records remain stable across the project rename. The seed is stored in the generated module for reproducibility.
 
 Do not hand-edit the output. To change name composition or ranges, edit and review `scripts/generate-synthetic-data.mjs`, then regenerate and inspect the full output for inappropriate or recognizable combinations.
 

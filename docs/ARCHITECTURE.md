@@ -2,7 +2,7 @@
 
 ## System shape
 
-Growth Share is a client-only React application with an optional Sites packaging layer.
+Open Creative Wall is a client-only React application with an optional Sites packaging layer.
 
 ```text
 src/config/site.ts

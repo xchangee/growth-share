@@ -83,7 +83,7 @@ async function validateProfileModule() {
   });
 
   const temporaryRoot = await mkdtemp(
-    path.join(tmpdir(), "growth-share-profile-check-"),
+    path.join(tmpdir(), "open-creative-wall-profile-check-"),
   );
 
   try {

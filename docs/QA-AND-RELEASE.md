@@ -77,7 +77,7 @@ dist/.openai/hosting.json
 Use a non-root Vite base for subpath hosting:
 
 ```bash
-VITE_BASE_PATH=/growth-share/ npm run build:client
+VITE_BASE_PATH=/open-creative-wall/ npm run build:client
 ```
 
 `VITE_BASE_PATH` also accepts `./` or an absolute CDN URL. Preview the resulting client before handoff, including one extensionless SPA route and direct asset URLs. Verify that built HTML and CSS use the configured base and contain no local absolute paths, private hosts, old brand terms or source maps that were not intentionally shipped.

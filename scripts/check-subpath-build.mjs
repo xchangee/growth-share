@@ -12,9 +12,9 @@ const executeFile = promisify(execFile);
 const scriptDirectory = path.dirname(fileURLToPath(import.meta.url));
 const projectRoot = path.resolve(scriptDirectory, "..");
 const viteBin = path.join(projectRoot, "node_modules/vite/bin/vite.js");
-const basePath = "/growth-share/";
+const basePath = "/open-creative-wall/";
 const temporaryRoot = await mkdtemp(
-  path.join(tmpdir(), "growth-share-subpath-build-"),
+  path.join(tmpdir(), "open-creative-wall-subpath-build-"),
 );
 const outputDirectory = path.join(temporaryRoot, "client");
 
@@ -30,9 +30,9 @@ try {
   );
 
   const index = await readFile(path.join(outputDirectory, "index.html"), "utf8");
-  assert.match(index, /href="\/growth-share\/favicon\.svg"/);
-  assert.match(index, /src="\/growth-share\/assets\/[^"/]+\.js"/);
-  assert.match(index, /href="\/growth-share\/assets\/[^"/]+\.css"/);
+  assert.match(index, /href="\/open-creative-wall\/favicon\.svg"/);
+  assert.match(index, /src="\/open-creative-wall\/assets\/[^"/]+\.js"/);
+  assert.match(index, /href="\/open-creative-wall\/assets\/[^"/]+\.css"/);
 
   const assetDirectory = path.join(outputDirectory, "assets");
   const builtAssets = await readdir(assetDirectory);

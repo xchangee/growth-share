@@ -1,9 +1,9 @@
 ---
-name: growth-share-event-wall
-description: Customize, rebrand, regenerate synthetic-only profiles and portraits, browser-QA, and build the Growth Share React/Vite/WebGL event-wall template. Use in this repository or an explicit derivative; do not use for generic frontend work or real-person data.
+name: open-creative-wall
+description: Customize, rebrand, regenerate synthetic-only profiles and portraits, browser-QA, and build the Open Creative Wall React/Vite/WebGL event-wall template. Use in this repository or an explicit derivative; do not use for generic frontend work or real-person data.
 ---
 
-# Growth Share Event Wall
+# Open Creative Wall
 
 Maintain and customize the application in the repository; do not copy the application into the skill.
 
@@ -11,7 +11,7 @@ Maintain and customize the application in the repository; do not copy the applic
 
 Locate the repository root and confirm it contains `package.json`, `src/components/TextureStage.tsx` and `scripts/generate-synthetic-data.mjs`. Read the root [AGENTS.md](../../../AGENTS.md) before acting. Inspect the working tree and preserve unrelated changes.
 
-This skill is compatible with the Growth Share `0.1.x` template. If the checkout has diverged, inspect its actual scripts and paths instead of assuming this version's layout.
+This skill is compatible with the Open Creative Wall `0.1.x` template. If the checkout has diverged, inspect its actual scripts and paths instead of assuming this version's layout.
 
 ## Choose only the relevant route
 

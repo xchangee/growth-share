@@ -1,6 +1,6 @@
 # Third-party notices
 
-This project uses third-party software and icon geometry. The MIT License in the repository root applies to Growth Share source code and documentation; it does not replace the licenses below.
+This project uses third-party software and icon geometry. The MIT License in the repository root applies to Open Creative Wall source code and documentation; it does not replace the licenses below.
 
 Versions are locked by `package-lock.json` and `scripts/requirements-avatar.txt`. A dependency update must update this notice when its license or attribution changes.
 

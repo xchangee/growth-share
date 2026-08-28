@@ -20,7 +20,7 @@ Do not open a public issue for:
 - malicious SVG, media, dependency or build-pipeline behavior;
 - a vulnerability that could affect users of a published build.
 
-Use GitHub's [private vulnerability-reporting form](https://github.com/xchangee/growth-share/security/advisories/new). Do not include the report in a public issue or discussion. If that form is unavailable, contact a maintainer privately and share only enough detail to establish a secure reporting path.
+Use GitHub's [private vulnerability-reporting form](https://github.com/xchangee/open-creative-wall/security/advisories/new). Do not include the report in a public issue or discussion. If that form is unavailable, contact a maintainer privately and share only enough detail to establish a secure reporting path.
 
 Include affected version or commit, environment, reproduction steps, impact, proof of concept where safe, and any known mitigation. Do not include real personal data; redact it or describe the shape of the issue.
 

@@ -1,20 +1,20 @@
-# Growth Share
+# Open Creative Wall
 
-一个面向大屏的 React、Vite 与 WebGL 动态视觉模板。项目提供人物档案、头像字形和活动主视觉三种场景；仓库中的人物资料均为合成演示数据，不对应员工、参会者或其他真实人物。
+**开放创意墙**是一个面向活动大屏的开源人物与创意视觉墙，基于 React、Vite 与 WebGL 构建。项目提供人物档案、头像字形和活动主视觉三种场景；仓库中的人物资料均为合成演示数据，不对应员工、参会者或其他真实人物。
 
 本项目以公开模板形式维护。代码与文档采用 MIT License；第三方依赖和视觉素材遵循各自的许可或发布状态，详见 [素材来源清单](ASSET-PROVENANCE.md) 和 [第三方声明](THIRD_PARTY_NOTICES.md)。
 
-[CI](https://github.com/xchangee/growth-share/actions/workflows/ci.yml) · [问题反馈](https://github.com/xchangee/growth-share/issues) · [安全报告](SECURITY.md) · [MIT License](LICENSE)
+[CI](https://github.com/xchangee/open-creative-wall/actions/workflows/ci.yml) · [问题反馈](https://github.com/xchangee/open-creative-wall/issues) · [安全报告](SECURITY.md) · [MIT License](LICENSE)
 
 ## 在线预览
 
-[![Growth Share 01 合成人物档案预览](docs/assets/preview-01-profile.png)](https://xchangee.github.io/growth-share/)
+[![Open Creative Wall 01 合成人物档案预览](docs/assets/preview-01-profile.png)](https://xchangee.github.io/open-creative-wall/)
 
-[![Growth Share 02 头像字形预览](docs/assets/preview-02-letters.png)](https://xchangee.github.io/growth-share/)
+[![Open Creative Wall 02 头像字形预览](docs/assets/preview-02-letters.png)](https://xchangee.github.io/open-creative-wall/)
 
-[![Growth Share 03 活动主视觉预览](docs/assets/preview-03-main-visual.png)](https://xchangee.github.io/growth-share/)
+[![Open Creative Wall 03 活动主视觉预览](docs/assets/preview-03-main-visual.png)](https://xchangee.github.io/open-creative-wall/)
 
-[打开在线演示 →](https://xchangee.github.io/growth-share/)
+[打开在线演示 →](https://xchangee.github.io/open-creative-wall/)
 
 在线演示包含 01 人物档案、02 头像字形与 03 活动主视觉三种场景，并内置经审核的 CC0 循环背景音乐；可点击右上角切换器、音乐按钮，或使用 Q、W、E 键切换。
 
@@ -77,7 +77,7 @@ npm run preview
 部署到子路径时，通过环境变量设置 Vite base，例如：
 
 ```bash
-VITE_BASE_PATH=/growth-share/ npm run build:client
+VITE_BASE_PATH=/open-creative-wall/ npm run build:client
 ```
 
 开发服务器监听地址可用 `VITE_HOST` 调整，额外允许的 Host 可通过逗号分隔的 `VITE_ALLOWED_HOSTS` 指定。具体检查项见 [QA 与交付指南](docs/QA-AND-RELEASE.md)。构建只会生成本地产物，不代表获得发布授权，也不会自动部署。
@@ -119,10 +119,10 @@ npm run generate:synthetic
 
 ## Codex Skill
 
-仓库内置 `.agents/skills/growth-share-event-wall`。在支持仓库级 Skill 的 Codex 环境中，可以显式调用：
+仓库内置 `.agents/skills/open-creative-wall`。在支持仓库级 Skill 的 Codex 环境中，可以显式调用：
 
 ```text
-$growth-share-event-wall 把 03 主视觉改成开放创新论坛，保持其他动效不变，并完成浏览器验收，但不要发布。
+$open-creative-wall 把 03 主视觉改成开放创新论坛，保持其他动效不变，并完成浏览器验收，但不要发布。
 ```
 
 Skill 只是一层轻量工作流说明；应用源码、生成器和文档仍以本仓库为唯一事实来源。

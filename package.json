@@ -1,17 +1,17 @@
 {
-  "name": "growth-share",
+  "name": "open-creative-wall",
   "version": "0.1.0",
-  "description": "A brand-neutral React, Vite, and WebGL event-wall template with synthetic profiles and a repository-level Codex Skill.",
+  "description": "An open-source React, Vite, and WebGL people-and-ideas wall for event displays, built with synthetic profiles.",
   "private": true,
   "license": "MIT",
   "type": "module",
   "repository": {
     "type": "git",
-    "url": "https://github.com/xchangee/growth-share.git"
+    "url": "https://github.com/xchangee/open-creative-wall.git"
   },
-  "homepage": "https://github.com/xchangee/growth-share#readme",
+  "homepage": "https://xchangee.github.io/open-creative-wall/",
   "bugs": {
-    "url": "https://github.com/xchangee/growth-share/issues"
+    "url": "https://github.com/xchangee/open-creative-wall/issues"
   },
   "keywords": [
     "event-wall",
